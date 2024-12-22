@@ -1,0 +1,161 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1391pt" height="221pt" viewBox="0.00 0.00 1391.15 221.00">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 217)">
+<title>ReCEval_Pipeline</title>
+<polygon fill="white" stroke="none" points="-4,4 -4,-217 1387.15,-217 1387.15,4 -4,4"/>
+<g id="clust1" class="cluster">
+<title>cluster_input</title>
+<path fill="none" stroke="#cccccc" d="M20,-92.2C20,-92.2 389.87,-92.2 389.87,-92.2 395.87,-92.2 401.87,-98.2 401.87,-104.2 401.87,-104.2 401.87,-160.2 401.87,-160.2 401.87,-166.2 395.87,-172.2 389.87,-172.2 389.87,-172.2 20,-172.2 20,-172.2 14,-172.2 8,-166.2 8,-160.2 8,-160.2 8,-104.2 8,-104.2 8,-98.2 14,-92.2 20,-92.2"/>
+<text text-anchor="middle" x="204.94" y="-157.4" font-family="Times,serif" font-size="12.00">(1) Input</text>
+</g>
+<g id="clust2" class="cluster">
+<title>cluster_decompose</title>
+<path fill="none" stroke="#cccccc" d="M504.64,-78.2C504.64,-78.2 975.86,-78.2 975.86,-78.2 981.86,-78.2 987.86,-84.2 987.86,-90.2 987.86,-90.2 987.86,-166.2 987.86,-166.2 987.86,-172.2 981.86,-178.2 975.86,-178.2 975.86,-178.2 504.64,-178.2 504.64,-178.2 498.64,-178.2 492.64,-172.2 492.64,-166.2 492.64,-166.2 492.64,-90.2 492.64,-90.2 492.64,-84.2 498.64,-78.2 504.64,-78.2"/>
+<text text-anchor="middle" x="740.25" y="-163.4" font-family="Times,serif" font-size="12.00">(2) Decompose Steps → RCUs</text>
+</g>
+<g id="clust5" class="cluster">
+<title>cluster_score</title>
+<path fill="none" stroke="#cccccc" d="M1245.89,-78.2C1245.89,-78.2 1363.15,-78.2 1363.15,-78.2 1369.15,-78.2 1375.15,-84.2 1375.15,-90.2 1375.15,-90.2 1375.15,-163.2 1375.15,-163.2 1375.15,-169.2 1369.15,-175.2 1363.15,-175.2 1363.15,-175.2 1245.89,-175.2 1245.89,-175.2 1239.89,-175.2 1233.89,-169.2 1233.89,-163.2 1233.89,-163.2 1233.89,-90.2 1233.89,-90.2 1233.89,-84.2 1239.89,-78.2 1245.89,-78.2"/>
+<text text-anchor="middle" x="1304.52" y="-160.4" font-family="Times,serif" font-size="12.00">(5) Aggregate Scores</text>
+</g>
+<!-- X -->
+<g id="node1" class="node">
+<title>X</title>
+<path fill="#f0f0f0" stroke="black" d="M97.38,-142C97.38,-142 28,-142 28,-142 22,-142 16,-136 16,-130 16,-130 16,-112.4 16,-112.4 16,-106.4 22,-100.4 28,-100.4 28,-100.4 97.38,-100.4 97.38,-100.4 103.38,-100.4 109.38,-106.4 109.38,-112.4 109.38,-112.4 109.38,-130 109.38,-130 109.38,-136 103.38,-142 97.38,-142"/>
+<text text-anchor="middle" x="62.69" y="-125.4" font-family="Times,serif" font-size="14.00">Input Context</text>
+<text text-anchor="middle" x="62.69" y="-108.6" font-family="Times,serif" font-size="14.00">X</text>
+</g>
+<!-- R -->
+<g id="node2" class="node">
+<title>R</title>
+<path fill="#f0f0f0" stroke="black" d="M381.87,-142C381.87,-142 191.6,-142 191.6,-142 185.6,-142 179.6,-136 179.6,-130 179.6,-130 179.6,-112.4 179.6,-112.4 179.6,-106.4 185.6,-100.4 191.6,-100.4 191.6,-100.4 381.87,-100.4 381.87,-100.4 387.87,-100.4 393.87,-106.4 393.87,-112.4 393.87,-112.4 393.87,-130 393.87,-130 393.87,-136 387.87,-142 381.87,-142"/>
+<text text-anchor="middle" x="286.73" y="-125.4" font-family="Times,serif" font-size="14.00">Model-Generated Reasoning Chain</text>
+<text text-anchor="middle" x="286.73" y="-108.6" font-family="Times,serif" font-size="14.00">R = {s^(1),...,s^(n)}</text>
+</g>
+<!-- X&#45;&gt;R -->
+<g id="edge1" class="edge">
+<title>X-&gt;R</title>
+<path fill="none" stroke="black" stroke-dasharray="5,2" d="M109.7,-121.2C126.85,-121.2 147.19,-121.2 167.85,-121.2"/>
+<polygon fill="black" stroke="black" points="167.83,-124.7 177.83,-121.2 167.83,-117.7 167.83,-124.7"/>
+<text text-anchor="middle" x="144.49" y="-125.4" font-family="Times,serif" font-size="14.00">Given</text>
+</g>
+<!-- step_i -->
+<g id="node3" class="node">
+<title>step_i</title>
+<path fill="#f0f0f0" stroke="black" d="M558.26,-139.2C558.26,-139.2 512.64,-139.2 512.64,-139.2 506.64,-139.2 500.64,-133.2 500.64,-127.2 500.64,-127.2 500.64,-115.2 500.64,-115.2 500.64,-109.2 506.64,-103.2 512.64,-103.2 512.64,-103.2 558.26,-103.2 558.26,-103.2 564.26,-103.2 570.26,-109.2 570.26,-115.2 570.26,-115.2 570.26,-127.2 570.26,-127.2 570.26,-133.2 564.26,-139.2 558.26,-139.2"/>
+<text text-anchor="middle" x="535.45" y="-117" font-family="Times,serif" font-size="14.00">Step s^(i)</text>
+</g>
+<!-- R&#45;&gt;step_i -->
+<g id="edge4" class="edge">
+<title>R-&gt;step_i</title>
+<path fill="none" stroke="#999999" d="M394.15,-121.2C427.44,-121.2 462.4,-121.2 489.1,-121.2"/>
+<polygon fill="#999999" stroke="#999999" points="488.86,-124.7 498.86,-121.2 488.86,-117.7 488.86,-124.7"/>
+<text text-anchor="middle" x="447.26" y="-125.4" font-family="Times,serif" font-size="14.00">Step-by-step</text>
+</g>
+<!-- srler -->
+<g id="node4" class="node">
+<title>srler</title>
+<path fill="#f0f0f0" stroke="black" d="M773.54,-128C773.54,-128 653.26,-128 653.26,-128 647.26,-128 641.26,-122 641.26,-116 641.26,-116 641.26,-98.4 641.26,-98.4 641.26,-92.4 647.26,-86.4 653.26,-86.4 653.26,-86.4 773.54,-86.4 773.54,-86.4 779.54,-86.4 785.54,-92.4 785.54,-98.4 785.54,-98.4 785.54,-116 785.54,-116 785.54,-122 779.54,-128 773.54,-128"/>
+<text text-anchor="middle" x="713.4" y="-111.4" font-family="Times,serif" font-size="14.00">Semantic Role Labeler</text>
+<text text-anchor="middle" x="713.4" y="-94.6" font-family="Times,serif" font-size="14.00">+ Heuristics</text>
+</g>
+<!-- step_i&#45;&gt;srler -->
+<g id="edge2" class="edge">
+<title>step_i-&gt;srler</title>
+<path fill="none" stroke="black" d="M570.37,-118.5C587.39,-117.15 608.81,-115.44 629.81,-113.77"/>
+<polygon fill="black" stroke="black" points="629.87,-117.28 639.56,-113 629.32,-110.3 629.87,-117.28"/>
+<text text-anchor="middle" x="605.76" y="-121.26" font-family="Times,serif" font-size="14.00">Apply</text>
+</g>
+<!-- rcus -->
+<g id="node5" class="node">
+<title>rcus</title>
+<path fill="#f0f0f0" stroke="black" d="M967.86,-144.4C967.86,-144.4 874.76,-144.4 874.76,-144.4 868.76,-144.4 862.76,-138.4 862.76,-132.4 862.76,-132.4 862.76,-98 862.76,-98 862.76,-92 868.76,-86 874.76,-86 874.76,-86 967.86,-86 967.86,-86 973.86,-86 979.86,-92 979.86,-98 979.86,-98 979.86,-132.4 979.86,-132.4 979.86,-138.4 973.86,-144.4 967.86,-144.4"/>
+<text text-anchor="middle" x="921.31" y="-127.8" font-family="Times,serif" font-size="14.00">RCUs:</text>
+<text text-anchor="middle" x="921.31" y="-111" font-family="Times,serif" font-size="14.00">- premise RCU</text>
+<text text-anchor="middle" x="921.31" y="-94.2" font-family="Times,serif" font-size="14.00">- conclusion RCU</text>
+</g>
+<!-- step_i&#45;&gt;rcus -->
+<g id="edge5" class="edge">
+<title>step_i-&gt;rcus</title>
+<path fill="none" stroke="#999999" d="M570.63,-134.1C576.44,-135.8 582.46,-137.27 588.26,-138.2 603.62,-140.66 607.7,-138.25 623.26,-138.2 721.73,-137.9 747.4,-147.98 844.76,-133.2 846.91,-132.87 849.09,-132.52 851.28,-132.14"/>
+<polygon fill="#999999" stroke="#999999" points="851.68,-135.62 860.85,-130.32 850.38,-128.74 851.68,-135.62"/>
+</g>
+<!-- srler&#45;&gt;rcus -->
+<g id="edge3" class="edge">
+<title>srler-&gt;rcus</title>
+<path fill="none" stroke="black" d="M785.84,-109.98C806.91,-110.79 829.93,-111.69 850.87,-112.5"/>
+<polygon fill="black" stroke="black" points="850.63,-116 860.76,-112.89 850.9,-109 850.63,-116"/>
+<text text-anchor="middle" x="824.15" y="-116.35" font-family="Times,serif" font-size="14.00">Frames</text>
+</g>
+<!-- c_intra -->
+<g id="node6" class="node">
+<title>c_intra</title>
+<path fill="#f0f0f0" stroke="black" d="M1179.48,-213C1179.48,-213 1092.6,-213 1092.6,-213 1086.6,-213 1080.6,-207 1080.6,-201 1080.6,-201 1080.6,-183.4 1080.6,-183.4 1080.6,-177.4 1086.6,-171.4 1092.6,-171.4 1092.6,-171.4 1179.48,-171.4 1179.48,-171.4 1185.48,-171.4 1191.48,-177.4 1191.48,-183.4 1191.48,-183.4 1191.48,-201 1191.48,-201 1191.48,-207 1185.48,-213 1179.48,-213"/>
+<text text-anchor="middle" x="1136.04" y="-196.4" font-family="Times,serif" font-size="14.00">Intra-step:</text>
+<text text-anchor="middle" x="1136.04" y="-179.6" font-family="Times,serif" font-size="14.00">Entailment / PVI</text>
+</g>
+<!-- rcus&#45;&gt;c_intra -->
+<g id="edge6" class="edge">
+<title>rcus-&gt;c_intra</title>
+<path fill="none" stroke="#555555" d="M980.16,-136.14C1007.76,-146.13 1040.91,-158.13 1069.45,-168.46"/>
+<polygon fill="#555555" stroke="#555555" points="1068.12,-171.7 1078.71,-171.81 1070.5,-165.12 1068.12,-171.7"/>
+<text text-anchor="middle" x="1023.53" y="-164.8" font-family="Times,serif" font-size="14.00">Compute</text>
+</g>
+<!-- c_inter -->
+<g id="node7" class="node">
+<title>c_inter</title>
+<path fill="#f0f0f0" stroke="black" d="M1192.89,-136C1192.89,-136 1079.19,-136 1079.19,-136 1073.19,-136 1067.19,-130 1067.19,-124 1067.19,-124 1067.19,-106.4 1067.19,-106.4 1067.19,-100.4 1073.19,-94.4 1079.19,-94.4 1079.19,-94.4 1192.89,-94.4 1192.89,-94.4 1198.89,-94.4 1204.89,-100.4 1204.89,-106.4 1204.89,-106.4 1204.89,-124 1204.89,-124 1204.89,-130 1198.89,-136 1192.89,-136"/>
+<text text-anchor="middle" x="1136.04" y="-119.4" font-family="Times,serif" font-size="14.00">Inter-step:</text>
+<text text-anchor="middle" x="1136.04" y="-102.6" font-family="Times,serif" font-size="14.00">Check Contradictions</text>
+</g>
+<!-- rcus&#45;&gt;c_inter -->
+<g id="edge7" class="edge">
+<title>rcus-&gt;c_inter</title>
+<path fill="none" stroke="#555555" d="M980.16,-115.2C1003.42,-115.2 1030.62,-115.2 1055.67,-115.2"/>
+<polygon fill="#555555" stroke="#555555" points="1055.5,-118.7 1065.5,-115.2 1055.5,-111.7 1055.5,-118.7"/>
+<text text-anchor="middle" x="1023.53" y="-119.4" font-family="Times,serif" font-size="14.00">Compute</text>
+</g>
+<!-- info_gain -->
+<g id="node8" class="node">
+<title>info_gain</title>
+<path fill="#f0f0f0" stroke="black" d="M1180.26,-58.4C1180.26,-58.4 1091.83,-58.4 1091.83,-58.4 1085.83,-58.4 1079.83,-52.4 1079.83,-46.4 1079.83,-46.4 1079.83,-12 1079.83,-12 1079.83,-6 1085.83,0 1091.83,0 1091.83,0 1180.26,0 1180.26,0 1186.26,0 1192.26,-6 1192.26,-12 1192.26,-12 1192.26,-46.4 1192.26,-46.4 1192.26,-52.4 1186.26,-58.4 1180.26,-58.4"/>
+<text text-anchor="middle" x="1136.04" y="-41.8" font-family="Times,serif" font-size="14.00">Info Gain (PVI)</text>
+<text text-anchor="middle" x="1136.04" y="-25" font-family="Times,serif" font-size="14.00">Given prior steps</text>
+<text text-anchor="middle" x="1136.04" y="-8.2" font-family="Times,serif" font-size="14.00">-&gt; final answer</text>
+</g>
+<!-- rcus&#45;&gt;info_gain -->
+<g id="edge8" class="edge">
+<title>rcus-&gt;info_gain</title>
+<path fill="none" stroke="#555555" d="M980.16,-91.81C1007.54,-80.74 1040.39,-67.47 1068.77,-55.99"/>
+<polygon fill="#555555" stroke="#555555" points="1070.04,-59.25 1078,-52.26 1067.42,-52.76 1070.04,-59.25"/>
+<text text-anchor="middle" x="1023.53" y="-86.63" font-family="Times,serif" font-size="14.00">Compute</text>
+</g>
+<!-- c_intra&#45;&gt;c_inter -->
+<!-- min_agg -->
+<g id="node9" class="node">
+<title>min_agg</title>
+<path fill="#f0f0f0" stroke="black" d="M1355.15,-144.4C1355.15,-144.4 1253.89,-144.4 1253.89,-144.4 1247.89,-144.4 1241.89,-138.4 1241.89,-132.4 1241.89,-132.4 1241.89,-98 1241.89,-98 1241.89,-92 1247.89,-86 1253.89,-86 1253.89,-86 1355.15,-86 1355.15,-86 1361.15,-86 1367.15,-92 1367.15,-98 1367.15,-98 1367.15,-132.4 1367.15,-132.4 1367.15,-138.4 1361.15,-144.4 1355.15,-144.4"/>
+<text text-anchor="middle" x="1304.52" y="-127.8" font-family="Times,serif" font-size="14.00">Final Scores:</text>
+<text text-anchor="middle" x="1304.52" y="-111" font-family="Times,serif" font-size="14.00">min across all steps</text>
+<text text-anchor="middle" x="1304.52" y="-94.2" font-family="Times,serif" font-size="14.00">(correctness, info)</text>
+</g>
+<!-- c_intra&#45;&gt;min_agg -->
+<g id="edge9" class="edge">
+<title>c_intra-&gt;min_agg</title>
+<path fill="none" stroke="black" stroke-dasharray="1,5" d="M1182.97,-170.96C1197.96,-164.03 1214.98,-156.15 1231.4,-148.56"/>
+<polygon fill="black" stroke="black" points="1232.55,-151.88 1240.16,-144.51 1229.61,-145.53 1232.55,-151.88"/>
+</g>
+<!-- c_inter&#45;&gt;info_gain -->
+<!-- c_inter&#45;&gt;min_agg -->
+<g id="edge10" class="edge">
+<title>c_inter-&gt;min_agg</title>
+<path fill="none" stroke="black" stroke-dasharray="1,5" d="M1205.24,-115.2C1213.51,-115.2 1221.99,-115.2 1230.33,-115.2"/>
+<polygon fill="black" stroke="black" points="1230.07,-118.7 1240.07,-115.2 1230.07,-111.7 1230.07,-118.7"/>
+</g>
+<!-- info_gain&#45;&gt;min_agg -->
+<g id="edge11" class="edge">
+<title>info_gain-&gt;min_agg</title>
+<path fill="none" stroke="black" stroke-dasharray="1,5" d="M1192.48,-57.84C1206.46,-65.06 1221.63,-72.9 1236.14,-80.39"/>
+<polygon fill="black" stroke="black" points="1234.21,-83.34 1244.71,-84.82 1237.43,-77.12 1234.21,-83.34"/>
+</g>
+</g>
+</svg>
