@@ -13,10 +13,6 @@ Conference: EMNLP 2023
 URL: <https://aclanthology.org/2023.emnlp-main.622/>
 Presenter: Koki Maeda
 
-<div class="footnote">
-This slide is created via <a href="https://marp.app/">Marp</a>.
-</div>
-
 ---
 
 ## What does this paper state?
@@ -75,10 +71,6 @@ Previous metrics focus on **surface-level similarity** or **likelihood**:
 > 1. **Correctness** (both local and global consistency)
 > 2. **Informativeness** (detects redundancy vs. genuine contribution)
 
-<div class="footnote">
-For more details on ROSCOE, see the appendix 👍
-</div>
-
 ---
 
 ## The Proposed Framework: ReCEval
@@ -110,12 +102,6 @@ $$
 
 > **Why?**: Fine-grained analysis: Evaluate each conclusion precisely against the premises.
 > **How?**: **SRL model\*** decomposes a sentence into **‘subject-verb-object’ frames**.
-
-<div class="footnote">
-* SRL: Semantic Role Labeling. Also heuristics like **A, so B** or **A because B** are used.
-<br>
-* See appendix for more details on step decomposition.
-</div>
 
 ---
 
@@ -163,12 +149,6 @@ $$
 $$
 
 Here, $\mathrm{PVI}(x \to y)$ measures how much information $x$ provides to generate $y$ under a model family $V$.
-
-<div class="footnote">
-- To calculate $P_{entail}$, authors use a pre-trained NLI model.
-<br>
-- See appendix for "pointwise V-information"!!
-</div>
 
 ---
 
@@ -250,10 +230,6 @@ Strong performance across multiple error types (factuality, redundancy, logic).
 
 ![h:400](./images/t2.png)
 
-<div class="footnote">
-- But I wonder RECEval's Somer's D is not so high ... 🤔
-</div>
-
 ---
 
 ## Experiments #2 Can ReCEval Improve Downstream Tasks?
@@ -277,10 +253,6 @@ Strong performance across multiple error types (factuality, redundancy, logic).
 Chain sampling based on ReCEval scores leads to improved final accuracy in math word problems.
 
 ![h:400](./images/t10.png)
-
-<div class="footnote">
-See appendix for more detailed ablation studies !!
-</div>
 
 ---
 
@@ -307,9 +279,6 @@ See appendix for more detailed ablation studies !!
   - Potential synergy with larger LMs (GPT-3.5, etc.) for “self-check” of reasoning.
 
 **In a sentence**: ReCEval is a practical, reference-free way to measure how logical and genuinely useful each step of a model’s reasoning is.
-
-<div class="footnote">
-But this will be better... 🥴
 
 ---
 
