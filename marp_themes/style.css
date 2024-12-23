@@ -211,3 +211,9 @@ blockquote > :last-child {
   left: 70px;
   right: 70px;
 }
+
+section.small-list ul {
+  font-size: 16px;
+  /* 必要に応じて line-height や margin も調整すると良い */
+  line-height: 1;
+}
