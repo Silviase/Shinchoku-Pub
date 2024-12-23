@@ -82,7 +82,7 @@ Previous metrics focus on **surface-level similarity** or **likelihood**:
   1. **Correctness**: Are intermediate conclusions valid and consistent with previous steps/context?
   2. **Informativeness**: Does each step add meaningful new information that helps derive the final answer?
 
-![h:150](./images/ReCEval_White.svg)
+![h:160](./images/ReCEval_White.svg)
 
 ---
 
@@ -159,7 +159,7 @@ We also require that the conclusion in step $i$ not contradict any previous info
 $$
 \text{inter-correct}^{(i)}
 =
-1 \;-\; \max_{\,r \,\in\, X \;\cup\; \{\mathrm{RCU}_{c}^{(j)}\}_{j < i} }
+1 \;-\; \max_{\,r \,\in\, X \;\cup\; \{\mathrm{RCU}_{c}^{(j)}\}_{j < i}; \leftarrow\mathrm{Former Input} }
 \,P_{\mathrm{contr}}\!\bigl(r;\,\mathrm{RCU}_{c}^{(i)}\bigr),
 $$
 
@@ -250,7 +250,7 @@ Strong performance across multiple error types (factuality, redundancy, logic).
 
 ## Results: **Downstream Gains** 👍
 
-Chain sampling based on ReCEval scores leads to improved final accuracy in math word problems.
+Chain sampling based on ReCEval scores improved final accuracy in math word problems.
 
 ![h:400](./images/t10.png)
 
@@ -282,17 +282,37 @@ Chain sampling based on ReCEval scores leads to improved final accuracy in math 
 
 ---
 
-### Appendix
+<!--
+_class: small-list
+-->
+
+## Further Related Paper: What's Next? 📚
+
+### Cutting-Edge
+
+GAIR-Lab are publishing a series of papers on reasoning chains (also evaluating them):
+
+- Evaluating Mathematical Reasoning Beyond Accuracy (AAAI 2025, _Oral_ )
+- O1 Replication Journey: A Strategic Progress Report -- Part 1
+
+### Multimodal
+
+- M3CoT: A Novel Benchmark for Multi-Domain Multi-step Multi-modal Chain-of-Thought (ACL 2024)
+- CoMT: A Novel Benchmark for Chain of Multi-modal Thought on Large Vision-Language Models (AAAI 2025)
+
+### Meta-Reasoning
+
+- MR-GSM8K - A Novel Benchmark for Evaluating Reasoning in LLMs (ICLR 2025 Under Review, 3,6,6,8)
+
+### NeurIPS Papers
+
+- Language Models Don’t Always Say What They Think: Unfaithful Explanations in Chain-of-Thought Prompting (NeurIPS 2023)
+- SELF-REFINE: Iterative Refinement with Self-Feedback (NeurIPS 2024)
+- Grokked Transformers are Implicit Reasoners: A Mechanistic Journey to the Edge of Generalization (NeurIPS 2024)
 
 ---
 
-## Further Related Paper
-
-If you are interested in evaluating mathematical reasoning, you can check out the followings:
-
-- GAIR-Lab are publishing a series of papers on reasoning chains (also evaluating them):
-  - Evaluating Mathematical Reasoning Beyond Accuracy (AAAI 2025, _Oral_ )
-  - O1 Replication Journey: A Strategic Progress Report -- Part 1
+### Appendix
 
 ---
 
